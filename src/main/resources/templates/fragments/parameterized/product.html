@@ -1,0 +1,12 @@
+<div th:fragment="formField (name, title, content)" class="col-lg-5 col-sm-10 m-3 shadow-lg mb-5 rounded">
+    <div class="row p-3">
+        <img class="rounded" th:src="@{'/img/' + ${name} + '-logo.png'}" alt="logo"/>
+    </div>
+    <div class="row p-3">
+        <h4 th:text="${title}"></h4>
+        <p th:text="${content}"></p>
+        <span>
+            Visit the web app <a th:href="@{'https://' + ${name} + 'herokuapp.com'}"> here</a>.
+        </span>
+    </div>
+</div>

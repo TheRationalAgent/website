@@ -1,0 +1,55 @@
+<section id="technologies" th:fragment="technologies">
+    <div class="row m-5 justify-content-center">
+        <h2 class="row text-center">Technology</h2>
+
+        <div class="row justify-content-center">
+            <h4 class="col-12 text-center">Front-end</h4>
+            <div th:replace="fragments/parameterized/technology.html :: formField(
+                    name='bootstrap',
+                    title='Bootstrap',
+                    subtitle='')">
+            </div>
+            <div th:replace="fragments/parameterized/technology.html :: formField(
+                    name='react',
+                    title='React',
+                    subtitle='')">
+            </div>
+        </div>
+            
+        <div class="row justify-content-center">
+            <h4 class="col-12 text-center">Back-end</h4>
+            <div th:replace="fragments/parameterized/technology.html :: formField(
+                    name='micronaut',
+                    title='Micronaut',
+                    subtitle='with Java or Kotlin')">
+            </div>
+            <div th:replace="fragments/parameterized/technology.html :: formField(
+                    name='jakarta',
+                    title='Jakarta EE',
+                    subtitle='')">
+            </div>
+            <div th:replace="fragments/parameterized/technology.html :: formField(
+                    name='nodejs',
+                    title='Node.js',
+                    subtitle='')">
+            </div>
+        </div>
+                
+        <div class="row justify-content-center">
+            <h4 class="col-12 text-center">Database</h4>
+            <div th:replace="fragments/parameterized/technology.html :: formField(
+                    name='mysql',
+                    title='MySQL',
+                    subtitle='')">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div th:replace="fragments/parameterized/technology.html :: formField(
+        name='rational-mortgage',
+        title='Rational Mortgage',
+        subtitle='more.')">
+</div>

@@ -1,0 +1,24 @@
+<section th:fragment="products">
+    <div id="products" class="row justify-content-center">
+        <h2 class="col-9 text-center">Products</h2>
+
+        <div th:replace="fragments/parameterized/product.html :: formField(
+        name='personal-4',
+        title='Personal4',
+        content='This web app allows you to create the four financial statements for your personal finances.
+                    Would you like to put your assets and liabilities on a clear balance sheet?
+                    Or maybe you prefer to know what your personal monthly net cash flow is?
+                    If these questions interest you, then this app is for you.')">
+
+        </div>
+
+        <div th:replace="fragments/parameterized/product.html :: formField(
+        name='rational-mortgage',
+        title='Rational Mortgage',
+        content='Deciding the take a mortgage loan is not an easy decision.
+                    This app helps you calculate how long the loan will take,
+                    how much you will pay in interest, and much more.')">
+
+        </div>
+    </div>
+</section>
