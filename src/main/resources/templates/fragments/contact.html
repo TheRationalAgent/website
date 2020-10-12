@@ -4,14 +4,14 @@
             <h2>Contact</h2>
         </div>
         <div class="justify-content-center col-8 p-3 m-3">
-            <form class="">
+            <form action="#" th:action="@{/email}" th:object="${email}" method="post">
                 <div class="form-group">
-                    <label for="exampleEmail" class="">Email</label>
-                    <input name="email" id="exampleEmail" type="email" class="form-control">
+                    <label for="exampleEmail">Email</label>
+                    <input type="text" th:field="*{senderAddress}" class="form-control">
                 </div>
                 <div class="form-group">
-                    <label for="exampleText" class="">Text Area</label>
-                    <textarea name="text" id="exampleText" class="form-control"></textarea>
+                    <label for="exampleText">Text Area</label>
+                    <textarea type="text" th:field="*{message}" class="form-control"></textarea>
                 </div>
                 <button class="btn btn-secondary">Submit</button>
             </form>
