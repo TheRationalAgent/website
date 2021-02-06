@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 @Controller
 public class ApplicationController {
 
-    private static Logger logger = Logger.getLogger(Application.class.getName());
+    private static final Logger logger = Logger.getLogger(Application.class.getName());
 
     @RequestMapping("/")
     public String getIndex(Model model) {

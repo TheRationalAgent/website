@@ -31,7 +31,10 @@ header > div > div > nav {
 
   padding: 75px;
 }
-
+.navbar {
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .border-brand-color {
   border-color: #008080 !important;
 }
