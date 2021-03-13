@@ -16,14 +16,7 @@ public class ApplicationController {
 
     @RequestMapping("/")
     public String getIndex(Model model) {
-        model.addAttribute("email", new Email());
         return "index";
-    }
-
-    @PostMapping("/email")
-    public String submit(@ModelAttribute Email email, BindingResult bindingResult, Model model) {
-        logger.info("email: " + email.toString());
-        return "redirect:";
     }
 
 }
